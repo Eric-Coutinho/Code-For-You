@@ -10,13 +10,13 @@ import NotFoundPage from './Pages/NotFoundPage/NotFound';
 
 function App() {
   return (
-    <>
+    <div className="App-header">
       <NavBar />
         <Routes>
           <Route path='/login' element={<LoginPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
-    </>
+    </div>
   );
 }
 
