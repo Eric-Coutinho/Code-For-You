@@ -7,6 +7,7 @@ import NavBar from './Components/NavBar/navbar';
 
 import LoginPage from './Pages/LoginPage/loginPage';
 import NotFoundPage from './Pages/NotFoundPage/NotFound';
+import RegisterPage from './Pages/RegisterPage/registerPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar />
         <Routes>
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
     </div>
