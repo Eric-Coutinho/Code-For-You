@@ -17,7 +17,7 @@ function LoginForm() {
                 <Form.Control type="password" placeholder="Insira sua senha.." style={{ padding: '1em' }} />
             </Form.Group>
             <Button variant="primary" style={{ backgroundColor: '#3A4CED', fontSize: '1.15em' }}>
-                <Link to="/home" className={styles.link}>
+                <Link to="/" className={styles.link}>
                     Entrar
                 </Link>
             </Button>
