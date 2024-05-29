@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button';
 import styles from './styles.module.scss'
 
 function RegisterForm() {
+    const navigate = useNavigate();
+
     return (
         <Form className={styles.form}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -29,10 +31,8 @@ function RegisterForm() {
                     Registrar
                 </Link>
             </Button>
-            <Button variant="danger" style={{ marginBlock: '0.5em', fontSize: '1.15em' }}>
-                <Link to="/login" className={styles.link}>
+            <Button variant="danger" style={{ marginBlock: '0.5em', fontSize: '1.15em' }} onClick={() => navigate('/login')}>
                     Cancelar
-                </Link>
             </Button>
         </Form>
     )

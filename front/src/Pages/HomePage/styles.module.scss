@@ -23,3 +23,11 @@
     border-radius: 15px;
     border: none;
 }
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    padding-inline: 2em;
+    margin-block: 1em;
+}
+
