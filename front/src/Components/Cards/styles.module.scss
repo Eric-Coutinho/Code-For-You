@@ -6,6 +6,12 @@
     padding: 1.5em;
     border-radius: 15px;
     width: 80%;
+    transition: 0.6s;
+}
+
+.cardBody:hover {
+    background-color: #C7C7C7;
+    transform: scale(1.1, 1.1);
 }
 
 .title {

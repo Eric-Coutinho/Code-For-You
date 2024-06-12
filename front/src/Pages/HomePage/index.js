@@ -5,9 +5,29 @@ import Cards from "../../Components/Cards";
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
+const desafio1 = {
+    id: 0,
+    title: 'Desafio 1',
+    description: 'Desafio 1 mt brabo lesgo'
+}
+const desafio2 = {
+    id: 1,
+    title: 'Desafio 2',
+    description: 'Desafio 2 mt brabo lesgo'
+}
+const desafio3 = {
+    id: 2,
+    title: 'Desafio 3',
+    description: 'Desafio 3 mt brabo lesgo'
+}
 
 export default function Home() {
+    const navigate = useNavigate();
+    const challenges = [desafio1, desafio2, desafio3, desafio1, desafio2, desafio3]; // fazer get de todos os desafios
+
     let options = ["Dificuldade", "Mais Recente", "Mais Completado", "Menos Completado"]
     return (
         <>
@@ -17,21 +37,19 @@ export default function Home() {
                         Desafios
                     </div>
                     <div className={styles.filter}>
-                        <Select label={"Filtrar"} options={options} />
+                        <Select options={options} />
                         <button className={styles.btn}>Criar desafio</button>
                     </div>
                 </div>
             </Row>
             <Row>
-                <Col lg='4' md='6' sm='12' className={styles.coluna}>
-                    <Cards title={'Desafio 1'} description={'Desafio mt brabo lesgo'} />
-                </Col>
-                <Col lg='4' md='6' sm='12' className={styles.coluna}>
-                    <Cards title={'Desafio 2'} description={'Desafio 2 mt brabo lesgo'} />
-                </Col>
-                <Col lg='4' md='6' sm='12' className={styles.coluna}>
-                    <Cards title={'Desafio 3'} description={'Desafio 3 mt brabo lesgo'} />
-                </Col>
+                {challenges.map((challenge, key) => {
+                    return (
+                        <Col lg='4' md='6' sm='12' className={styles.coluna}>
+                            <Cards title={`${challenge.title}`} description={`${challenge.description}`} id={`${challenge.id}`} key={key} onClick={() => navigate('/desafio')} />
+                        </Col>
+                    )
+                })}
             </Row>
         </>
     )

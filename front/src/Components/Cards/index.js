@@ -2,9 +2,9 @@ import styles from "./styles.module.scss"
 
 import Container from 'react-bootstrap/Container';
 
-export default function Cards({ title, description }) {
+export default function Cards({ title, description, onClick }) {
     return (
-        <div className={styles.cardBody}>
+        <div className={styles.cardBody} onClick={onClick}>
             <div className={styles.title}>
                 {title}
             </div>
