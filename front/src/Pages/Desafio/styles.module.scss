@@ -4,5 +4,17 @@
 }
 
 .title {
-    font-size: 2em;
+    font-size: 3em;
 }
+
+.description {
+    font-size: 2em;
+    text-align: justify;
+    padding-inline: 1.5em;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+}
+

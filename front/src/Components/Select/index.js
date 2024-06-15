@@ -5,8 +5,11 @@ export default function Select({ label, options }) {
     <div className={styles.botao}>
       <div className={styles.label}>{label}</div>
       <select className={styles.select}>
-        {options.map((option) => {
-          return <option>{option}</option>;
+        <option disabled defaultChecked>
+          Selecione
+        </option>
+        {options.map((option, key) => {
+          return <option key={key} value={option}>{option}</option>;
         })}
       </select>
     </div>

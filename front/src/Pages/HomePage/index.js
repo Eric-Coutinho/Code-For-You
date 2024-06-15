@@ -6,7 +6,6 @@ import Cards from "../../Components/Cards";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const desafio1 = {
     id: 0,
@@ -46,7 +45,7 @@ export default function Home() {
                 {challenges.map((challenge, key) => {
                     return (
                         <Col lg='4' md='6' sm='12' className={styles.coluna}>
-                            <Cards title={`${challenge.title}`} description={`${challenge.description}`} id={`${challenge.id}`} key={key} onClick={() => navigate('/desafio')} />
+                            <Cards title={`${challenge.title}`} description={`${challenge.description}`} id={`${challenge.id}`} key={challenge.id} onClick={() => navigate('/desafio')} />
                         </Col>
                     )
                 })}
