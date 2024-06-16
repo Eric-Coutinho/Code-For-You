@@ -6,11 +6,12 @@ import './App.css';
 import NavBar from './Components/NavBar/navbar';
 
 import { Home } from './Pages/HomePage';
+import { DesafioPage } from './Pages/Desafio';
+import { ForumPage } from './Pages/Forum/forum';
+import { ForumsPage } from './Pages/Forums/forumsPage';
 import { LoginPage } from './Pages/LoginPage/loginPage';
 import { NotFoundPage } from './Pages/NotFoundPage/NotFound';
 import { RegisterPage } from './Pages/RegisterPage/registerPage';
-import { DesafioPage } from './Pages/Desafio';
-import { ForumPage } from './Pages/Forum/forumPage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/desafio' element={<DesafioPage />} />
-          <Route path='/forums' element={<ForumPage />} />
+          <Route path='/forums' element={<ForumsPage />} />
+          <Route path='/forum' element={<ForumPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
     </div>

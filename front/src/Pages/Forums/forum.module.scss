@@ -1,0 +1,33 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.btn {
+    width: 100%;
+    margin-inline: 1em;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    border: none;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    padding-inline: 2em;
+    margin-block: 1em;
+}
+

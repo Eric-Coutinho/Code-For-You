@@ -4,7 +4,7 @@ import styles from './textEditor.module.scss';
 
 import Editor from "@monaco-editor/react";
 
-export function TextEditor({ onChange, language }) {
+export function TextEditor({ onChange, language, defaultValue }) {
     const [value, setValue] = useState("");
 
     const handleEditorChange = (value) => {
@@ -13,14 +13,12 @@ export function TextEditor({ onChange, language }) {
     return (
         <div className={styles.outsideBox}>
             <div className={styles.insideBox}>
-                    <Editor
-                        language={language || "javascript"}
-                        value={value}
-                        defaultValue="// some comment
-                        console.log('Hi hi');
-                        "
-                        onChange={handleEditorChange}
-                    />
+                <Editor
+                    language={language || "javascript"}
+                    value={value}
+                    defaultValue={defaultValue || ""}
+                    onChange={handleEditorChange}
+                />
             </div>
         </div>
     )

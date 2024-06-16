@@ -51,7 +51,7 @@ export function DesafioPage() {
             </Row>
             <Row className={styles.center} style={{ marginTop: '2em' }}>
                 <Col lg='6' md='8' sm='12' className={styles.center} style={{ marginBottom: '1em' }}>
-                    <TextEditor />
+                    <TextEditor language={'javascript'} defaultValue={"console.log('Hi hi');"}/>
                 </Col>
             </Row>
             <Row className={styles.center} style={{ marginTop: '2em' }}>

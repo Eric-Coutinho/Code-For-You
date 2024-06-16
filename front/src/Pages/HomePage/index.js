@@ -44,7 +44,7 @@ export function Home() {
             <Row>
                 {challenges.map((challenge, key) => {
                     return (
-                        <Col lg='4' md='6' sm='12' className={styles.coluna}>
+                        <Col lg='4' md='6' sm='12' className={styles.coluna} key={key}>
                             <Cards title={`${challenge.title}`} description={`${challenge.description}`} id={`${challenge.id}`} key={challenge.id} onClick={() => navigate('/desafio')} />
                         </Col>
                     )
