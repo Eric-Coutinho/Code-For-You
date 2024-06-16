@@ -37,7 +37,7 @@ export function Home() {
                     </div>
                     <div className={styles.filter}>
                         <Select options={options} />
-                        <button className={styles.btn}>Criar desafio</button>
+                        <button className={styles.btn} onClick={() => navigate('/create/challenge')}>Criar desafio</button>
                     </div>
                 </div>
             </Row>

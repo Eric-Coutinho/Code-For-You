@@ -37,7 +37,7 @@ export function ForumsPage() {
                     </div>
                     <div className={styles.filter}>
                         <Select options={options} />
-                        <button className={styles.btn}>Criar Fórum</button>
+                        <button className={styles.btn} onClick={() => navigate('/create/forum')}>Criar Fórum</button>
                     </div>
                 </div>
             </Row>
