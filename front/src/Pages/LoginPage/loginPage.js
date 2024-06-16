@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 import styles from './styles.module.scss'
 
-function LoginPage() {
+export function LoginPage() {
     return (
         <Container fluid className={styles.container}>
             <h1 className={styles.title}>Login</h1>
@@ -13,5 +13,3 @@ function LoginPage() {
         
     )
 }
-
-export default LoginPage;

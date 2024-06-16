@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss"
+import styles from "./forum.module.scss"
 
 import Select from "../../Components/Select"
 import Cards from "../../Components/Cards";
@@ -23,7 +23,7 @@ const desafio3 = {
     description: 'Mostrar no console o "Hello word".'
 }
 
-export function Home() {
+export function ForumPage() {
     const navigate = useNavigate();
     const challenges = [desafio1, desafio2, desafio3, desafio1, desafio2, desafio3]; // fazer get de todos os desafios
 
