@@ -10,19 +10,14 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.navContainer}>
             <Container className={styles.container} style={{ margin: '0' }}>
-                <Navbar.Brand>
-                    <Link
-                        to="/"
-                        className={styles.link}
-                    >
-                        Code For You
-                    </Link>
+                <Navbar.Brand style={{ color: 'white' }}>
+                    Code For You
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to="/desafios" className={styles.link}>
-                            <Nav.Link href='/desafios' style={{ color: 'white' }}>
+                        <Link to="/" className={styles.link}>
+                            <Nav.Link href='/' style={{ color: 'white' }}>
                                 Desafios
                             </Nav.Link>
                         </Link>

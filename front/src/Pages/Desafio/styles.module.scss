@@ -18,3 +18,20 @@
     justify-content: center;
 }
 
+.output {
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    margin-block: 0.4em;
+    padding: 0.3em 1em;
+    font-size: 1.4em;
+    width: 20em;
+}
+
+.expected {
+    text-align: center;
+}
+
+.obtained {
+    text-align: center;
+}
