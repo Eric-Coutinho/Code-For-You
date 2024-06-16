@@ -10,17 +10,17 @@ import { useNavigate } from "react-router-dom";
 const desafio1 = {
     id: 0,
     title: 'Desafio 1',
-    description: 'Desafio 1 mt brabo lesgo'
+    description: 'Mostrar no console o "Hello word".'
 }
 const desafio2 = {
     id: 1,
     title: 'Desafio 2',
-    description: 'Desafio 2 mt brabo lesgo'
+    description: 'Mostrar no console o "Hello word".'
 }
 const desafio3 = {
     id: 2,
     title: 'Desafio 3',
-    description: 'Desafio 3 mt brabo lesgo'
+    description: 'Mostrar no console o "Hello word".'
 }
 
 export default function Home() {

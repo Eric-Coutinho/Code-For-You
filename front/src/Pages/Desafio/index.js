@@ -35,7 +35,7 @@ export function DesafioPage() {
             <Row className={styles.center} style={{ marginTop: '2em' }}>
                 <Col lg='8' md='8' sm='12' className={styles.center}>
                     <div className={styles.description}>
-                        Desafio 1 mt brabo lesgo. Mostra ai no console o "Hello word".
+                        Desafio 1. Mostrar no console o "Hello word".
                     </div>
                 </Col>
             </Row>
